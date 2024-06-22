@@ -5,22 +5,26 @@
  *  Return: Always 0 (success)
 */
 /* betty style doc for function main goes there */
+#include <stdio.h>
 int main(void)
 {
-	char c
-		c = 'a';
-	while
-		(c <= 'z') {
-			putchar(c);
-			c++;
-		}
-	while
-		(c <= 'Z') {
-			putchar (c);
-			c++;
-		}
+    char c = 'a';
+    char d = 'A';
 
-	putchar('\n');
+    // Print lowercase alphabet
+    while (c <= 'z') {
+        putchar(c);
+        c++;
+    }
 
-	return (0);
+    // Print uppercase alphabet
+    while (d <= 'Z') {
+        putchar(d);
+        d++;
+    }
+
+    // Print newline
+    putchar('\n');
+
+    return (0);
 }
