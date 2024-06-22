@@ -7,21 +7,20 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	char c;
-	char d;
-	
-	c = 'a';
-	d = 'A';
+	char c
+		c = 'a';
 	while
 		(c <= 'z') {
 			putchar(c);
 			c++;
 		}
 	while
-		(d <= 'z') {
-			putchar (d);
-			d++;
+		(c <= 'Z') {
+			putchar (c);
+			c++;
 		}
+
 	putchar('\n');
+
 	return (0);
 }
