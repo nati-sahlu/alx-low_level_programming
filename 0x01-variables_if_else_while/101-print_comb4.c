@@ -8,20 +8,25 @@ int main(void)
 {
 	int ones = '0';
 	int tens = '0';
+	int hundreds = '0';
 
-	for (tens = '0'; tens <= '9'; tens++)
+	for (hundreds = '0'; hunreds <= '9'; hundreds++)
 	{
-		for (ones = '0'; ones <= '9'; ones++)
+		for (tens = '0'; tens <= '9'; tens++)
 		{
-			if (!(ones == tens) && (tens < ones))
+			for (ones = '0'; ones <= '9'; ones++)
 			{
-				putchar(tens);
-				putchar(ones);
-				if (!(ones == '9' && tens == '8'))
+				if (!((ones == tens) || (tens ==hundreds) || (tens > ones) || (hundreds > tens)))
 				{
-					putchar(',');
-					putchar(' ');
-				}
+					putchar(hundreds);
+					putchar(tens);
+					putchar(ones);
+					if (!(ones == '9' && hundreds == '7' &&  tens == '8'))
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}	
 			}
 		}
 	}
