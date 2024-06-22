@@ -16,7 +16,7 @@ int main(void)
 		{
 			for (one = '0'; one <= '9'; one++)
 			{
-				if (!((one == ten) || (ten == hundred) || (ten > one) || (hiundred > ten)))
+				if (!((one == ten) || (ten == hundred) || (ten > one) || (hundred > ten)))
 				{
 					putchar(hundred);
 					putchar(ten);
