@@ -8,7 +8,6 @@
 int main(void)
 {
     char c = 'a';
-    char d = 'A';
 
     // Print lowercase alphabet
     while (c <= 'z') {
@@ -16,10 +15,12 @@ int main(void)
         c++;
     }
 
+    c = 'A';
+
     // Print uppercase alphabet
-    while (d <= 'Z') {
-        putchar(d);
-        d++;
+    while (c <= 'Z') {
+        putchar(c);
+        c++;
     }
 
     // Print newline
