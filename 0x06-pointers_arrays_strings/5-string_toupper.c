@@ -1,4 +1,4 @@
-#include "mai.h"
+#include "main.h"
 /**
  * string_toupper - change all lowercase letters of a string to uppercase
  * @n: string to be modified
