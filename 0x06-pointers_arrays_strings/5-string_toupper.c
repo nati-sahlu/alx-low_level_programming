@@ -1,21 +1,19 @@
 #include "mai.h"
 /**
- * string_toupper - change all lowercase to uppercase
- * @n: pointer to the string
- * Return: pointer to modified string
+ * string_toupper - change all lowercase letters of a string to uppercase
+ * @n: string to be modified
+ * Return: pointer to the modified string
  */
 char *string_toupper(char *n)
 {
 	int i;
 
-	i = 0;
-	while (n[i] != '\0')
+	for (i = 0; n[i] != '\0'; i++)
 	{
 		if (n[i] >= 'a' && n[i] <= 'z')
 		{
 			n[i] = n[i] - 32;
 		}
-		i++;
 	}
 	return (n);
 }
