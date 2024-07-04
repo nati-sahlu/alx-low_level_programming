@@ -30,27 +30,23 @@ void rev_string(char *n)
  * @n2: text representation of 2nd number to add
  * @r: pointer to buffer
  * @size_r: buffer size
- * Return: pointer to calling function or 0 if result can't be stored in r
+ * Return: pointer to calling function
  */
+
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int overflow = 0, i = 0, j = 0, digits = 0;
 	int val1 = 0, val2 = 0, temp_tot = 0;
 
-/* Calculate the lengths of n1 and n2 */
 	while (*(n1 + i) != '\0')
 		i++;
 	while (*(n2 + j) != '\0')
 		j++;
 	i--;
 	j--;
-
-/* If the result can't fit in the buffer, return 0 */
-	if (i >= size_r || j >= size_r)
+	if (j >= size_r || i >= size_r)
 		return (0);
-
-/* Add the numbers digit by digit */
-	while (i >= 0 || j >= 0 || overflow == 1)
+	while (j >= 0  i >= 0  overflow == 1)
 	{
 		if (i < 0)
 			val1 = 0;
@@ -69,17 +65,12 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			return (0);
 		*(r + digits) = (temp_tot % 10) + '0';
 		digits++;
-		i--;
 		j--;
+		i--;
 	}
-
-/* Null-terminate the result string */
 	if (digits == size_r)
 		return (0);
 	*(r + digits) = '\0';
-
-/* Reverse the result string to get the correct order */
 	rev_string(r);
 	return (r);
 }
-
