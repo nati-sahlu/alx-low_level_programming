@@ -5,7 +5,6 @@
  * @n: integer params
  * Return: 0
  */
-
 void rev_string(char *n)
 {
 	int i = 0;
@@ -27,27 +26,31 @@ void rev_string(char *n)
 }
 /**
  * infinite_add - add 2 numbers together
- * @n1: text reperesentation of 1st number to add
- * @n2: text reperesentation of 2st number to add
+ * @n1: text representation of 1st number to add
+ * @n2: text representation of 2nd number to add
  * @r: pointer to buffer
- * @size_r:buffer size
- * Return: pointer to calling function
+ * @size_r: buffer size
+ * Return: pointer to calling function or 0 if result can't be stored in r
  */
-
-char *infinite_add(char *n1, char *n2, char *n2, char *r, int size_r)
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int overflow = 0, i = 0, j = 0, digits = 0;
 	int val1 = 0, val2 = 0, temp_tot = 0;
 
+/* Calculate the lengths of n1 and n2 */
 	while (*(n1 + i) != '\0')
-	i++;
+		i++;
 	while (*(n2 + j) != '\0')
 		j++;
 	i--;
 	j--;
-	if (j >= 0 || i >= size_r)
+
+/* If the result can't fit in the buffer, return 0 */
+	if (i >= size_r || j >= size_r)
 		return (0);
-	while (j >= 0 || i >= 0 || overflow == 1)
+
+/* Add the numbers digit by digit */
+	while (i >= 0 || j >= 0 || overflow == 1)
 	{
 		if (i < 0)
 			val1 = 0;
@@ -66,12 +69,17 @@ char *infinite_add(char *n1, char *n2, char *n2, char *r, int size_r)
 			return (0);
 		*(r + digits) = (temp_tot % 10) + '0';
 		digits++;
-		j--;
 		i--;
+		j--;
 	}
+
+/* Null-terminate the result string */
 	if (digits == size_r)
 		return (0);
 	*(r + digits) = '\0';
+
+/* Reverse the result string to get the correct order */
 	rev_string(r);
 	return (r);
-	}
+}
+
