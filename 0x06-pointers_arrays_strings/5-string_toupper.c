@@ -1,8 +1,8 @@
 #include "mai.h"
 /**
  * string_toupper - change all lowercase to uppercase
- * @n: pointer
- * Return: n
+ * @n: pointer to the string
+ * Return: pointer to modified string
  */
 char *string_toupper(char *n)
 {
