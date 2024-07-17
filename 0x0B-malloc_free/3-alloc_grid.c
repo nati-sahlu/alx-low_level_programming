@@ -9,7 +9,7 @@
 int **alloc_grid(int width, int height)
 {
 	int **mee;
-	int x, y;
+	int x;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
@@ -30,7 +30,7 @@ int **alloc_grid(int width, int height)
 				free(mee[x]);
 
 			free(mee);
-			return (NULL);
+			return mee;
 		}
 	}
 }
