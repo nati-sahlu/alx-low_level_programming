@@ -30,7 +30,8 @@ int **alloc_grid(int width, int height)
 				free(mee[x]);
 
 			free(mee);
-			return mee;
+			return (NULL);
 		}
 	}
+	return mee;
 }
