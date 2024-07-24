@@ -5,6 +5,8 @@
  *
  * Description:The function prints the numbers from 0 - 9 followed by new line
  * It returns nothing
+ *
+ * Return: always 0
  */
 void print_numbers(void)
 {
