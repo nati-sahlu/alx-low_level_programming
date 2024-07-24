@@ -18,8 +18,8 @@ void print_most_numbers(void)
 		}
 		else
 		{
-			_putchar(j + '0'); // Convert integer to character
+			_putchar(j);
 		}
 	}
-		_putchar('\n'); // Print new line
+		_putchar('\n');
 }
