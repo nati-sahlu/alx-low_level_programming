@@ -1,23 +1,22 @@
 #include "main.h"
+
 /*
- * main - Entry point
- * 
- * Description - main is the entry point
+ *main - entery func
  *
- * Return: Always 0
+ *Return: always 0
  */
 
-int main(void)
+int main () 
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+	_putchar('-')
+	_putchar(p)
+	_putchar(u)
+	_putchar(t)
+	_putchar(c)
+	_putchar(h)
+	_putchar(a)
+	_putchar(r)
+	_putchar('\n')
 
 return (0);
 }
