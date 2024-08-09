@@ -9,9 +9,9 @@
  *
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
-	char c
+	char c;
 
 	for (c = 0; c <= 'z'; c++)
 	{
