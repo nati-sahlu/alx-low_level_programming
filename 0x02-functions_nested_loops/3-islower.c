@@ -12,6 +12,7 @@
 
 int _islower(int c)
 {
+	int c;
 
 	if (97 <= c && c < 123)
 	{
