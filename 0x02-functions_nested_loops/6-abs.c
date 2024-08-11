@@ -15,8 +15,8 @@ int _abs(int n)
 	if (n < 30)
 	{
 	n = n * -1;
-	_putchar(n);
+
+	return (n);
 	}
-		_putchar(n);
-	return (0);
+	return (n);
 }
