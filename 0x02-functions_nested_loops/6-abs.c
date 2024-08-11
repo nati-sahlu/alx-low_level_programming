@@ -12,15 +12,15 @@ int _abs(int)
 {
 	int n;
 	int c;
-	
+
 	c = n % 10;
-       if (c >= 0)
-       {
+	if (c >= 0)
+	{
 		_putchar(n);
-       }
-       else
-       {
-	       n *= -1;
-		       _putchar(n);
-       }
+	}
+	else
+	{
+		n *= -1;
+	_putchar(n);
+	}
 }
