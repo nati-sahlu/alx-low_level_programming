@@ -11,9 +11,12 @@
 
 int _abs(int n)
 {
-	if (n < '0')
+	int c
+
+	c = n % 10;
+	if (c < 30)
 	{
-		n = n * -1;
+	n =  c * -10;
 		 _putchar(n);
 	}
 		_putchar(n);
