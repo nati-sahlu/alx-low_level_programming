@@ -8,9 +8,8 @@
  * Return: 0
  */
 
-int _abs(int)
+int _abs(int n)
 {
-	int n;
 	int c;
 
 	c = n % 10;
@@ -23,4 +22,5 @@ int _abs(int)
 		n *= -1;
 	_putchar(n);
 	}
+	return (0);
 }
