@@ -13,7 +13,7 @@ int print_last_digit(int n)
 {
 	int d;
 
-	if ( n <= 0)
+	if ( n <= '30')
 	{
 		n = n * -1;
 		d = n % 10;
