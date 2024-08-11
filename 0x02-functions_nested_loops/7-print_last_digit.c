@@ -19,11 +19,9 @@ int print_last_digit(int n)
 		d = n % 10;
 		_putchar(d);
 	}
-	else
-	{
+
 		d = n % 10;
 		_putchar(d);
                 return (d);
-	}
 
 }
