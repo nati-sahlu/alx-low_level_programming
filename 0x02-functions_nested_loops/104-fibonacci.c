@@ -14,17 +14,17 @@ int main(void)
 
 	for (i = 0;i < 98; i++)
 	{
-		m = n + m;
-		f = m;
-		n = f;
-		if (m > 9)
+		f = n + m;
+		if (f > 9)
 		{
-			_putchar(m / 10 + '0');
-			_putchar(m % 10 + '0');
+			_putchar(f / 10 + '0');
+			_putchar(f % 10 + '0');
 		}
 		else 
 		{
-			 _putchar(m + '0');
+			 _putchar(f + '0');
+			 n = m;
+			 m = f;
 		}
 		_putchar(',');
 		_putchar(' ');
