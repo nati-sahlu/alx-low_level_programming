@@ -9,9 +9,9 @@
 int main(void)
 {
 	int n = 1;
-	int m;
+	int m = 0;
 	
-	for ( m = 0; m < 100; m + n)
+	while (m < 100)
 	{
 		m = n + m;
 		n = m;
@@ -26,6 +26,7 @@ int main(void)
 		}
 		_putchar(',');
 		_putchar(' ');
+		m = m + n;
 	}
 	return (0);
 }
