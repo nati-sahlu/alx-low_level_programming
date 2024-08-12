@@ -22,10 +22,10 @@ int main(void)
 	unsigned long int f;
 	int i;
 
-	_putchar(n);
+	_putchar(n + '0');
 	_putchar(',');
 	_putchar(' ');
-	_putchar(m);
+	_putchar(m + '0');
 	_putchar(',');
 	_putchar(' ');
 
