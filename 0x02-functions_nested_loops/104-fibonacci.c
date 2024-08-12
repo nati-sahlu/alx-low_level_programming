@@ -8,12 +8,11 @@
 
 int main(void)
 {
-	int n = 1;
-	int m = 0;
-	int i = 0;
-	int f ;
+	int n = 0;
+	int m = 1;
+	int i, f;
 
-	while (i < 98)
+	for (i = 0;i < 98; i++)
 	{
 		m = n + m;
 		f = m;
@@ -29,7 +28,6 @@ int main(void)
 		}
 		_putchar(',');
 		_putchar(' ');
-		i++;
 	}
 	return (0);
 }
