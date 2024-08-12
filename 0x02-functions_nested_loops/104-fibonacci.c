@@ -17,16 +17,24 @@ _putchar(n % 10 + '0');
 
 int main(void)
 {
-	unsigned long int n = 0;
-	unsigned long int m = 1;
+	unsigned long int n = 1;
+	unsigned long int m = 2;
 	unsigned long int f;
 	int i;
+
+	_putchar(n);
+	_putchar(',');
+	_putchar(' ');
+	_putchar(m);
+	_putchar(',');
+	_putchar(' ');
+
 	for (i = 0; i < 98; i++)
 	{
 		f = n + m;
 		print_int(f);
 
-		n= m;
+		n = m;
 		m = f;
 
 		if (i != 97)
@@ -35,5 +43,6 @@ int main(void)
 		_putchar(' ');
 		}
 	}
+	 _putchar('\n');
 	return (0);
 }
