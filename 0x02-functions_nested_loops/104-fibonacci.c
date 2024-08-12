@@ -23,11 +23,15 @@ int main(void)
 		else 
 		{
 			 _putchar(f + '0');
-			 n = m;
-			 m = f;
 		}
+       		n = m;
+		m = f;
+		
+		if ( i != 97)
+		{
 		_putchar(',');
 		_putchar(' ');
+		}
 	}
 	return (0);
 }
