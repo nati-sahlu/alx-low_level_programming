@@ -28,8 +28,11 @@ void times_table(void)
 			{
 			_putchar(n + '0');
 			}
+			if ( j != 9)
+			{
 			_putchar(',');
 			_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
