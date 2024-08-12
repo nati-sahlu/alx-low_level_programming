@@ -1,8 +1,15 @@
 #include "main.h"
 
-/*
+/**
+ * times_table - Prints the 9 times table, starting with 0.
  *
+ * Description: This function prints the multiplication table for
+ * the numbers 0 through 9. The results are formatted in a grid where
+ * each cell contains the product of the row and column indices. If
+ * the product is a single digit, it is preceded by a space for alignment.
+ * The cells are separated by commas and spaces.
  *
+ * Return: void
  */
 
 void times_table(void)
@@ -10,7 +17,7 @@ void times_table(void)
 	int i;
 	int j;
 	int n;
-	int c , d;
+	int c, d;
 
 	for (i = 0; i < 10; i++)
 	{
@@ -26,9 +33,10 @@ void times_table(void)
 			}
 			else
 			{
+			_putchar(' ');
 			_putchar(n + '0');
 			}
-			if ( j != 9)
+			if (j != 9)
 			{
 			_putchar(',');
 			_putchar(' ');
