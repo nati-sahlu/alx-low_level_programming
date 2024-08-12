@@ -17,8 +17,13 @@ int main(void)
 		f = n + m;
 		if (f > 9)
 		{
-			_putchar(f / 10 + '0');
-			_putchar(f % 10 + '0');
+			while (f != 0)
+			{
+				d = f % 10;
+				f = f / 10;
+				 _putchar(d + '0');
+			}
+
 		}
 		else 
 		{
