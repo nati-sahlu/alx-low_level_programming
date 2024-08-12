@@ -6,7 +6,7 @@
  *
  */
 
-void print_int(int n)
+void print_int(unsigned long int n)
 {
 	if (n < 0)
 	{
@@ -22,19 +22,19 @@ _putchar(n % 10 + '0');
 
 int main(void)
 {
-	int n = 0;
-	int m = 1;
-	int i, f;
-
-	for (i = 0;i < 98; i++)
+	unsigned long int n = 0;
+	unsigned long int m = 1;
+	unsigned long int f;
+	int i;
+	for (i = 0; i < 98; i++)
 	{
 		f = n + m;
 		print_int(f);
 
-       		n = m;
+		n= m;
 		m = f;
-		
-		if ( i != 97)
+
+		if (i != 97)
 		{
 		_putchar(',');
 		_putchar(' ');
