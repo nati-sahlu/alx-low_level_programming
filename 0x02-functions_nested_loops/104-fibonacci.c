@@ -14,7 +14,6 @@ int main(void)
 	while (m < 100)
 	{
 		m = n + m;
-		n = m;
 		if (m > 9)
 		{
 			_putchar(m / 10 + '0');
@@ -27,6 +26,7 @@ int main(void)
 		_putchar(',');
 		_putchar(' ');
 		m = m + n;
+		n = m;
 	}
 	return (0);
 }
