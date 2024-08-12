@@ -10,7 +10,7 @@ int main(void)
 {
 	int n = 0;
 	int m = 1;
-	int i, f, d;
+	int i, f, d, j;
 
 	for (i = 0;i < 98; i++)
 	{
@@ -19,13 +19,14 @@ int main(void)
 		{
 			while (f != 0)
 			{
-				d = f % 10;
-				if (f > 9 && f < 100)
+				j = f;
+				d = j % 10;
+				if (f> 9 && f < 100)
 				{
 					_putchar(f / 10 + '0');
 				}
 				 _putchar(d + '0');
-				 f = f / 10;
+				 f = j / 10;
 			}
 
 		}
