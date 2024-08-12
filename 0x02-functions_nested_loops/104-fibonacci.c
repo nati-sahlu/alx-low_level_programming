@@ -21,7 +21,12 @@ int main(void)
 			{
 				d = f % 10;
 				f = f / 10;
+				if (f > 9 && f < 100)
+				{
+					_putchar(f / 10 + '0');
+				}
 				 _putchar(d + '0');
+				 f = f / 10;
 			}
 
 		}
