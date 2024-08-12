@@ -10,10 +10,14 @@ int main(void)
 {
 	int n = 1;
 	int m = 0;
-	
-	while (m < 100)
+	int i = 0;
+	int f ;
+
+	while (i < 98)
 	{
 		m = n + m;
+		f = m;
+		n = f;
 		if (m > 9)
 		{
 			_putchar(m / 10 + '0');
@@ -25,8 +29,7 @@ int main(void)
 		}
 		_putchar(',');
 		_putchar(' ');
-		m = m + n;
-		n = m;
+		i++;
 	}
 	return (0);
 }
