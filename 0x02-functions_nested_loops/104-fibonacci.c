@@ -6,7 +6,7 @@
  *
  */
 
-void main(void)
+int main(void)
 {
 	int n = 1;
 	int m;
@@ -27,4 +27,5 @@ void main(void)
 		_putchar(',');
 		_putchar(' ');
 	}
+	return (0);
 }
