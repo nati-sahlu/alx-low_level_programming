@@ -10,30 +10,14 @@ int main(void)
 {
 	int n = 0;
 	int m = 1;
-	int i, f, d, j;
+	int i, f;
 
 	for (i = 0;i < 98; i++)
 	{
 		f = n + m;
-		if (f > 9)
-		{
-			while (f != 0)
-			{
-				j = f;
-				d = j % 10;
-				if (f> 9 && f < 100)
-				{
-					_putchar(f / 10 + '0');
-				}
-				 _putchar(d + '0');
-				 f = j / 10;
-			}
 
-		}
-		else 
-		{
-			 _putchar(f + '0');
-		}
+        print_int(f);
+
        		n = m;
 		m = f;
 		
