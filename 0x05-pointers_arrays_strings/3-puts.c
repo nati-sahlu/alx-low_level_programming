@@ -7,9 +7,10 @@
 
 void _puts(char *str)
 {
-	char n[] = {'s', 't', 'r', 'i', 'n', 'g', '/0'};
+	char n[] = *str;
+	int i;
 
-		for (i = 0; i < 5; i++)
+		for (i = 0; i < sizeof(*str) ; i++)
 		{
 			_putchar(i);
 
